@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Inter, Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #052e16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ecfdf5;
+}
+
+.app {
+  width: 360px;
+  max-width: 100%;
+  background: #020617;
+  border-radius: 16px;
+  padding: 26px;
+  border: 2px solid #065f46;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 22px;
+  color: #d1fae5;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.row.inline {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.field {
+  flex: 1;
+  min-width: 120px;
+}
+
+label {
+  font-size: 12px;
+  color: #6ee7b7;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid #064e3b;
+  background: #020617;
+  font-size: 14px;
+  color: #ecfdf5;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #22c55e;
+}
+
+#swap {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #064e3b;
+  background: #020617;
+  color: #6ee7b7;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#swap:hover {
+  background: #022c22;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #022c22, #020617);
+  border: 2px solid #22c55e;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ecfdf5;
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.rate-info {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #a7f3d0;
+  line-height: 1.4;
+}
+
+.currency-meta {
+  margin-top: 2px;
+  font-size: 11px;
+  color: #6ee7b7;
+}
+
+.error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(220, 38, 38, 0.15);
+  border: 2px solid #991b1b;
+  color: #fecaca;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 11px;
+  color: #6ee7b7;
+}

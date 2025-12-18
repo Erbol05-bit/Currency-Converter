@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/71/71123.png" type="image/png">
+
+</head>
+<body>
+  <div class="app">
+    <h1>Конвертер валют</h1>
+
+    <form id="converter-form">
+      <div class="row">
+        <label for="amount">Сумма</label>
+        <input
+          type="number"
+          id="amount"
+          min="0"
+          step="0.01"
+          value="100"
+          required
+        />
+      </div>
+
+      <div class="row inline">
+        <div class="field">
+          <label for="from">Из</label>
+          <select id="from"></select>
+        </div>
+
+        <button type="button" id="swap" title="Поменять местами">
+          ⇄
+        </button>
+
+        <div class="field">
+          <label for="to">В</label>
+          <select id="to"></select>
+        </div>
+      </div>
+
+    </form>
+
+    <div id="result" class="result">
+      Введите данные и нажмите «Конвертировать»
+    </div>
+
+    <div id="rate-info" class="rate-info"></div>
+
+    <div id="error" class="error hidden"></div>
+
+    <footer>
+      <small>Курс берётся с api.exchangerate.host</small>
+    </footer>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
